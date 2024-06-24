@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_awards",
+  "info": {
+    "displayName": "awards",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

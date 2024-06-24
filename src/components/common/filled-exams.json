@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_filled_exams",
+  "info": {
+    "displayName": "filled_exams",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "exam_name": {
+      "type": "string"
+    },
+    "score": {
+      "type": "string"
+    },
+    "booked_date": {
+      "type": "string"
+    }
+  }
+}

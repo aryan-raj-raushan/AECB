@@ -1,0 +1,189 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exams",
+  "info": {
+    "singularName": "exam",
+    "pluralName": "exams",
+    "displayName": "exam",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exam_url": {
+      "type": "uid",
+      "required": true
+    },
+    "page_data": {
+      "type": "dynamiczone",
+      "components": [
+        "common.gallery",
+        "common.new-overview",
+        "common.faq",
+        "common.banner-component",
+        "common.recommended-colleges",
+        "common.recommended-courses",
+        "common.recommended-exams",
+        "common.recommended-careers",
+        "common.recommended-scholarships",
+        "common.recommended-countries",
+        "common.jee-rank-predictor",
+        "common.neet-rank-predictor",
+        "common.rating-and-review",
+        "common.discussion-forum",
+        "common.news-and-update"
+      ],
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "banner": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "exam_mode": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exam-mode.exam-mode",
+      "inversedBy": "exam_names"
+    },
+    "streams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stream.stream",
+      "inversedBy": "exams"
+    },
+    "exam_level": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exam-level.exam-level",
+      "inversedBy": "exams"
+    },
+    "application_date": {
+      "displayName": "application_date",
+      "type": "component",
+      "repeatable": false,
+      "component": "common.application-date",
+      "required": true
+    },
+    "exam_date": {
+      "displayName": "exm_date",
+      "type": "component",
+      "repeatable": false,
+      "component": "common.exm-date",
+      "required": true
+    },
+    "result_date": {
+      "displayName": "result_date",
+      "type": "component",
+      "repeatable": false,
+      "component": "common.result-date",
+      "required": true
+    },
+    "nav_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::navbar.navbar",
+      "inversedBy": "exams"
+    },
+    "exam_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-and-blog.news-and-blog",
+      "inversedBy": "exams"
+    },
+    "dawonload_brochure": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "exam_title": {
+      "type": "text",
+      "required": true,
+      "maxLength": 150
+    },
+    "review_component": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.review-component",
+      "required": true
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "discussion_forums": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::discussion-forum.discussion-forum",
+      "mappedBy": "exams"
+    },
+    "user_forms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-form.user-form",
+      "mappedBy": "exam"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "exams"
+    },
+    "is_top": {
+      "type": "boolean",
+      "default": false
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "exams"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_rating_and_reviews",
+  "info": {
+    "displayName": "rating_and_review",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "section": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    }
+  }
+}

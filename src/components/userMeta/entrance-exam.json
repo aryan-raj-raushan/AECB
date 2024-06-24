@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_usermeta_entrance_exams",
+  "info": {
+    "displayName": "entrance_exam",
+    "icon": "collapse",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "exam": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exam.exam"
+    },
+    "score": {
+      "type": "string"
+    }
+  }
+}

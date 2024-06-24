@@ -1,0 +1,127 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_and_blogs",
+  "info": {
+    "singularName": "news-and-blog",
+    "pluralName": "news-and-blogs",
+    "displayName": "news",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "url": {
+      "type": "string",
+      "regex": "^[a-zA-Z0-9-]+$",
+      "required": true
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    },
+    "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "blog",
+        "news"
+      ],
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "maxLength": 180
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "mappedBy": "news"
+    },
+    "exams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::exam.exam",
+      "mappedBy": "news"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "news",
+      "required": true
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_recommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_top": {
+      "type": "boolean",
+      "default": false
+    },
+    "countries": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::country.country",
+      "inversedBy": "news"
+    },
+    "specializations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::specialization.specialization",
+      "inversedBy": "news"
+    },
+    "careers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::career.career",
+      "inversedBy": "news"
+    },
+    "colleges": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::college.college",
+      "mappedBy": "news"
+    },
+    "landing_pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::landing-page.landing-page",
+      "mappedBy": "news"
+    },
+    "scholarships": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::scholarship.scholarship",
+      "mappedBy": "news"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_common_banner_components",
+  "info": {
+    "displayName": "banner_component",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 250
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    }
+  }
+}

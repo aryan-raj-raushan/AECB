@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_common_10th_class_info_components",
+  "info": {
+    "displayName": "10th_class info_component",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "schoolName": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "passingYear": {
+      "type": "string"
+    },
+    "gradingSystem": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "board": {
+      "type": "string"
+    }
+  }
+}

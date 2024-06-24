@@ -1,0 +1,154 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users_meta_dataes",
+  "info": {
+    "singularName": "users-meta-data",
+    "pluralName": "users-meta-dataes",
+    "displayName": "users_meta_data",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "applied_colleges": {
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.applied-colleges-component"
+    },
+    "applied_courses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.applied-courses-component"
+    },
+    "applied_exams": {
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.applied-exams-component"
+    },
+    "applied_scholarships": {
+      "displayName": "applied_scholarships",
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.applied-scholarships"
+    },
+    "careers_interested": {
+      "displayName": "careers_interested",
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.careers-interested"
+    },
+    "countries_interested": {
+      "displayName": "countries_interested",
+      "type": "component",
+      "repeatable": false,
+      "component": "usermeta.countries-interested"
+    },
+    "other_service_interest": {
+      "displayName": "other_service_interest",
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.other-service-interest"
+    },
+    "user_data": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-data.user-data",
+      "inversedBy": "users_meta_data"
+    },
+    "email": {
+      "type": "email"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "courseInterested": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
+    },
+    "number": {
+      "type": "string"
+    },
+    "graduationDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.graduation-info-component"
+    },
+    "educationDetailsSecondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.12th-class-info-component"
+    },
+    "educationDetailsPrimary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.10th-class-info-component"
+    },
+    "professionalExperience": {
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.professional-experience-component"
+    },
+    "doctorateDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.graduation-info-component"
+    },
+    "filled_exams": {
+      "displayName": "filled_exams",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.filled-exams"
+    },
+    "preferred_institutions": {
+      "displayName": "preferred_institutions",
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.preferred-institutions"
+    },
+    "entrance_exam": {
+      "displayName": "entrance_exam",
+      "type": "component",
+      "repeatable": true,
+      "component": "usermeta.entrance-exam"
+    },
+    "save_college": {
+      "displayName": "save_college",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.save-college"
+    },
+    "save_exam": {
+      "displayName": "save_exam",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.save-exam"
+    },
+    "save_course": {
+      "displayName": "save_course",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.save-course"
+    },
+    "save_careers": {
+      "displayName": "save_careers",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.save-careers"
+    },
+    "save_scholarships": {
+      "displayName": "save_scholarships",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.save-scholarships"
+    }
+  }
+}

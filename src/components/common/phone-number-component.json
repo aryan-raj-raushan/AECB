@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_phone_number_components",
+  "info": {
+    "displayName": "phone_number_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

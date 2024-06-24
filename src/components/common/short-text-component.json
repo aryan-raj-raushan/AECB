@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_short_text_components",
+  "info": {
+    "displayName": "short_text_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

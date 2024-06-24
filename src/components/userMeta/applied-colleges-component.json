@@ -1,0 +1,21 @@
+{
+  "collectionName": "applied_colleges_components",
+  "info": {
+    "displayName": "Applied_Colleges_Component",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "college": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::college.college"
+    },
+    "current_step": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::application-step.application-step"
+    }
+  }
+}

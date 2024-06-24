@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "virtual_tours",
+  "info": {
+    "singularName": "virtual-tour",
+    "pluralName": "virtual-tours",
+    "displayName": "virtual_tour",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 250
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 150
+    }
+  }
+}

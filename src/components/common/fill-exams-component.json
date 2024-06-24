@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_fill_exams_components",
+  "info": {
+    "displayName": "fill_exams_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

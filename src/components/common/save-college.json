@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_save_colleges",
+  "info": {
+    "displayName": "save_college",
+    "icon": "expand",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "colleges": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::college.college"
+    }
+  }
+}

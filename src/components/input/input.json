@@ -1,0 +1,13 @@
+{
+  "collectionName": "input",
+  "info": {
+    "displayName": "add_specializations",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "section": {
+      "type": "string"
+    }
+  }
+}

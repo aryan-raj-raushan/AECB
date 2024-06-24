@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_common_compare_components",
+  "info": {
+    "displayName": "compare_component",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "section": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    },
+    "heading": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

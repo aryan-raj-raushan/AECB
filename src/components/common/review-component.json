@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_common_review_components",
+  "info": {
+    "displayName": "review_component",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "likes": {
+      "displayName": "likes",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.likes"
+    },
+    "dislikes": {
+      "displayName": "dislikes",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.dislikes"
+    }
+  }
+}

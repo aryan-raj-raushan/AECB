@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "get_in_touches",
+  "info": {
+    "singularName": "get-in-touch",
+    "pluralName": "get-in-touches",
+    "displayName": "Get in Touch",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "streams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stream.stream",
+      "inversedBy": "get_in_touches"
+    },
+    "userPhone": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "select_test": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::select-test.select-test"
+    }
+  }
+}

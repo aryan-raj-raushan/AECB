@@ -1,0 +1,157 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scholarships",
+  "info": {
+    "singularName": "scholarship",
+    "pluralName": "scholarships",
+    "displayName": "scholarship",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "nav_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::navbar.navbar",
+      "inversedBy": "scholarship"
+    },
+    "page_data": {
+      "type": "dynamiczone",
+      "components": [
+        "common.gallery",
+        "common.faq",
+        "common.new-overview",
+        "common.recommended-colleges",
+        "common.recommended-courses",
+        "common.recommended-exams",
+        "common.recommended-careers",
+        "common.recommended-scholarships",
+        "common.recommended-countries",
+        "common.banner-component",
+        "common.discussion-forum",
+        "common.rating-and-review",
+        "common.news-and-update"
+      ],
+      "required": true
+    },
+    "banner": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "conducted_by": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::organisation.organisation",
+      "inversedBy": "scholarships"
+    },
+    "scholarship_title": {
+      "type": "string",
+      "required": true
+    },
+    "eligibility": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::scholarship-type.scholarship-type",
+      "inversedBy": "scholarships"
+    },
+    "number_of_scholarship": {
+      "type": "biginteger",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "scholarship_url": {
+      "type": "string",
+      "required": true
+    },
+    "discussion_forums": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::discussion-forum.discussion-forum",
+      "mappedBy": "scholarships"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo"
+    },
+    "colleges": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::college.college",
+      "inversedBy": "scholarships"
+    },
+    "user_forms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-form.user-form",
+      "mappedBy": "scholarship"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "scholarships"
+    },
+    "is_top": {
+      "type": "boolean",
+      "default": false
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "scholarships"
+    },
+    "review_component": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.review-component",
+      "required": true
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-and-blog.news-and-blog",
+      "inversedBy": "scholarships"
+    }
+  }
+}

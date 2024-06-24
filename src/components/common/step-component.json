@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_step_components",
+  "info": {
+    "displayName": "step_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_usermeta_professional_experience_components",
+  "info": {
+    "displayName": "Professional_ Experience_Component",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "organizationName": {
+      "type": "string"
+    },
+    "jobPosition": {
+      "type": "string"
+    },
+    "jobStart": {
+      "type": "string"
+    },
+    "jobEnd": {
+      "type": "string"
+    }
+  }
+}

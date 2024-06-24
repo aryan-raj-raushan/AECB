@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_user_details",
+  "info": {
+    "displayName": "user_details",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

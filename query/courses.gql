@@ -1,0 +1,95 @@
+query {
+  courses {
+    data {
+      id
+      attributes {
+        course_name
+        page_data {
+          __typename
+          ... on ComponentCommonGallery {
+            gallery {
+              data {
+                attributes {
+                  url
+                  formats
+                  size
+                }
+              }
+            }
+            section
+          }
+          ... on ComponentCommonGoogleAds {
+            section
+          }
+          ... on ComponentCommonNavbar {
+            nav_item {
+              title
+            }
+            section
+          }
+          ... on ComponentCommonNewOverview {
+            overview_text
+            writer_name
+            date
+            section
+          }
+          ... on ComponentCommonFaq {
+            questions {
+              Question
+              Answer
+            }
+            section
+          }
+        }
+        average_fees
+        is_top_course
+        duration
+        type
+        logo {
+          data {
+            attributes {
+              url
+              formats
+              size
+            }
+          }
+        }
+        banner {
+          data {
+            attributes {
+              url
+              formats
+              size
+            }
+          }
+        }
+        title
+        description
+        canonical
+        keywords
+        og_title
+        og_url
+        og_description
+        og_image {
+          data {
+            attributes {
+              url
+              formats
+              size
+            }
+          }
+        }
+        og_image_alt {
+          data {
+            attributes {
+              url
+              formats
+              size
+            }
+          }
+        }
+        og_image_alt_text
+      }
+    }
+  }
+}

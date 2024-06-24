@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_news_and_updates",
+  "info": {
+    "displayName": "news_and_update",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    }
+  }
+}

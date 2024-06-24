@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_save_careers",
+  "info": {
+    "displayName": "save_careers",
+    "icon": "command",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "careers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::career.career"
+    }
+  }
+}

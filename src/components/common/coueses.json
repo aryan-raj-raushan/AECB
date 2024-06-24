@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_coueses",
+  "info": {
+    "displayName": "coueses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "courses_name": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    },
+    "fee_amount": {
+      "type": "decimal"
+    },
+    "fee_label": {
+      "type": "string"
+    }
+  }
+}

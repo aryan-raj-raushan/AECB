@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_common_articals",
+  "info": {
+    "displayName": "artical",
+    "icon": "expand"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "publish_date": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "sub_title": {
+      "type": "text",
+      "required": false,
+      "maxLength": 250
+    }
+  }
+}

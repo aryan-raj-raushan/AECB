@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "select_tests",
+  "info": {
+    "singularName": "select-test",
+    "pluralName": "select-tests",
+    "displayName": "SelectTest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

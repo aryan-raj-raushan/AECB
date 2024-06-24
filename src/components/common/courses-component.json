@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_common_courses_components",
+  "info": {
+    "displayName": "courses_component",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    }
+  }
+}

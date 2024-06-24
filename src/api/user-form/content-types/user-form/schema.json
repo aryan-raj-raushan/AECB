@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_forms",
+  "info": {
+    "singularName": "user-form",
+    "pluralName": "user-forms",
+    "displayName": "user_form",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "form_title": {
+      "type": "string"
+    },
+    "form_description": {
+      "type": "text"
+    },
+    "form_url": {
+      "type": "string"
+    },
+    "college": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::college.college",
+      "inversedBy": "user_forms"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "user_forms"
+    },
+    "exam": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exam.exam",
+      "inversedBy": "user_forms"
+    },
+    "career": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::career.career",
+      "inversedBy": "user_forms"
+    },
+    "scholarship": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::scholarship.scholarship",
+      "inversedBy": "user_forms"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "user_forms"
+    },
+    "landing_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::landing-page.landing-page",
+      "inversedBy": "user_forms"
+    },
+    "form_stape": {
+      "displayName": "form_stape",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.form-stape"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_banners",
+  "info": {
+    "singularName": "event-banner",
+    "pluralName": "event-banners",
+    "displayName": "Event_banner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_banner": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_select_level_components",
+  "info": {
+    "displayName": "select_level_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_scholarships",
+  "info": {
+    "displayName": "Scholarships"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    }
+  }
+}

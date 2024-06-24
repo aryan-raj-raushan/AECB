@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discussion_forums",
+  "info": {
+    "singularName": "discussion-forum",
+    "pluralName": "discussion-forums",
+    "displayName": "discussion_forum",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "discussion_forum_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "dIscussion_forum_main_question": {
+      "type": "string",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo",
+      "required": false
+    },
+    "discussion_forum_reply": {
+      "displayName": "discussion_forum_reply",
+      "type": "component",
+      "repeatable": false,
+      "component": "common.discussion-forum-reply",
+      "required": true
+    },
+    "colleges": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::college.college",
+      "inversedBy": "discussion_forums"
+    },
+    "exams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::exam.exam",
+      "inversedBy": "discussion_forums"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "inversedBy": "discussion_forums"
+    },
+    "careers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::career.career",
+      "inversedBy": "discussion_forums"
+    },
+    "countries": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::country.country",
+      "inversedBy": "discussion_forums"
+    },
+    "scholarships": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::scholarship.scholarship",
+      "inversedBy": "discussion_forums"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_nav_bars",
+  "info": {
+    "displayName": "nav_bar",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

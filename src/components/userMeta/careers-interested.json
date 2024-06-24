@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_usermeta_careers_interested_s",
+  "info": {
+    "displayName": "careers_interested ",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "careers": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::career.career"
+    },
+    "current_step": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::application-step.application-step"
+    }
+  }
+}

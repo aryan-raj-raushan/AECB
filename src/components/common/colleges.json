@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_colleges",
+  "info": {
+    "displayName": "Colleges"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    }
+  }
+}

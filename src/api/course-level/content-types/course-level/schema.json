@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_levels",
+  "info": {
+    "singularName": "course-level",
+    "pluralName": "course-levels",
+    "displayName": "course_level",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course_level_name": {
+      "type": "string",
+      "required": true
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "course_level"
+    }
+  }
+}

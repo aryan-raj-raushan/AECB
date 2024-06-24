@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_common_department_components",
+  "info": {
+    "displayName": "department_component",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "section": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    },
+    "courses": {
+      "displayName": "coueses",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.coueses"
+    },
+    "heading": {
+      "type": "string",
+      "maxLength": 150
+    }
+  }
+}

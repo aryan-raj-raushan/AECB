@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_common_users",
+  "info": {
+    "displayName": "user",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "filed_type": {
+      "type": "enumeration",
+      "enum": [
+        "name",
+        "email",
+        "phone",
+        "otp",
+        "stream",
+        "course_level",
+        "course",
+        "short_text",
+        "filled_exams",
+        "preferred_colleges",
+        "gender",
+        "isWhatsappSame",
+        "boards",
+        "passing_year",
+        "percentage",
+        "tenth_class_details",
+        "twelve_class_details",
+        "doctorate_details",
+        "additional_education",
+        "postgraduate_details",
+        "score"
+      ]
+    },
+    "field_label": {
+      "type": "string"
+    }
+  }
+}

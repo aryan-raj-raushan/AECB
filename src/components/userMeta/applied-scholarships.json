@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_usermeta_applied_scholarships",
+  "info": {
+    "displayName": "applied_scholarships",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "scholarships": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scholarship.scholarship"
+    },
+    
+    "current_step": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::application-step.application-step"
+    } 
+  }
+}

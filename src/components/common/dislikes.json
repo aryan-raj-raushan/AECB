@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_dislikes",
+  "info": {
+    "displayName": "dislikes",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

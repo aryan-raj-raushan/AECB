@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_select_stream_components",
+  "info": {
+    "displayName": "select_stream_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

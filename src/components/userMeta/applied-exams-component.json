@@ -1,0 +1,22 @@
+{
+  "collectionName": "applied_exams_component_s",
+  "info": {
+    "displayName": "applied_exams_component ",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "exams": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exam.exam"
+    },
+     
+    "current_step": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::application-step.application-step"
+    }
+  }
+}

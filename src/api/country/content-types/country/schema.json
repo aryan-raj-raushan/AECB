@@ -1,0 +1,218 @@
+{
+  "kind": "collectionType",
+  "collectionName": "countries",
+  "info": {
+    "singularName": "country",
+    "pluralName": "countries",
+    "displayName": "country",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "country_name": {
+      "type": "uid",
+      "required": true
+    },
+    "states": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::state.state",
+      "mappedBy": "country"
+    },
+    "colleges": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::college.college",
+      "mappedBy": "country"
+    },
+    "region": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::region.region",
+      "inversedBy": "countries"
+    },
+    "flags": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "banner": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "country_url": {
+      "type": "string",
+      "required": true
+    },
+    "display_name": {
+      "type": "string",
+      "required": true
+    },
+    "display_sequence": {
+      "type": "biginteger",
+      "min": "1",
+      "required": true
+    },
+    "nav_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::navbar.navbar",
+      "inversedBy": "countrie"
+    },
+    "page_data": {
+      "type": "dynamiczone",
+      "components": [
+        "common.gallery",
+        "common.faq",
+        "common.new-overview",
+        "common.recommended-colleges",
+        "common.recommended-courses",
+        "common.recommended-exams",
+        "common.recommended-careers",
+        "common.recommended-scholarships",
+        "common.recommended-countries",
+        "common.banner-component",
+        "common.rating-and-review",
+        "common.news-and-update",
+        "common.discussion-forum",
+        "common.colleges-component",
+        "common.exams-component",
+        "common.careers-component",
+        "common.scholarship-component",
+        "common.courses-component"
+      ],
+      "required": true
+    },
+    "discussion_forums": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::discussion-forum.discussion-forum",
+      "mappedBy": "countries"
+    },
+    "is_top": {
+      "type": "boolean",
+      "default": false
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo"
+    },
+    "user_forms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-form.user-form",
+      "mappedBy": "country"
+    },
+    "exams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exam.exam",
+      "mappedBy": "country"
+    },
+    "careers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::career.career",
+      "mappedBy": "country"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "country"
+    },
+    "scholarships": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::scholarship.scholarship",
+      "mappedBy": "country"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "short_description": {
+      "type": "text",
+      "required": true
+    },
+    "global_rank": {
+      "type": "biginteger",
+      "unique": true,
+      "default": "1",
+      "required": true
+    },
+    "listing_banner": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "mascot_image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "average_cost_living": {
+      "type": "decimal",
+      "required": true
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "countries"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-and-blog.news-and-blog",
+      "mappedBy": "countries"
+    },
+    "review_component": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.review-component",
+      "required": true
+    }
+  }
+}

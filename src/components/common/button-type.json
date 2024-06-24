@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_common_button_types",
+  "info": {
+    "displayName": "button_type"
+  },
+  "options": {},
+  "attributes": {
+    "button_title": {
+      "type": "string"
+    },
+    "button_link": {
+      "type": "string"
+    }
+  }
+}

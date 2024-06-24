@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "let_us_help_finds",
+  "info": {
+    "singularName": "let-us-help-find",
+    "pluralName": "let-us-help-finds",
+    "displayName": "Let Us Help Find"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "streams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stream.stream",
+      "inversedBy": "let_us_help_finds"
+    }
+  }
+}

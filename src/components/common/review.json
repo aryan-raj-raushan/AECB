@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_common_reviews",
+  "info": {
+    "displayName": "review",
+    "icon": "collapse",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "user_details": {
+      "displayName": "user_details",
+      "type": "component",
+      "repeatable": false,
+      "component": "common.user-details"
+    },
+    "infrastructure_hostel_facilities_detail": {
+      "type": "string"
+    },
+    "infrastructure_hostel_facilities_rating": {
+      "type": "float"
+    },
+    "academics_faculty_details": {
+      "type": "string"
+    },
+    "academics_faculty_rating": {
+      "type": "float"
+    },
+    "placements_internships_details": {
+      "type": "string"
+    },
+    "placements_internships_rating": {
+      "type": "float"
+    },
+    "crowd_campus_life_details": {
+      "type": "string"
+    },
+    "crowd_campus_life_rating": {
+      "type": "float"
+    },
+    "fees_scholarships_details": {
+      "type": "string"
+    },
+    "fees_scholarships_rating": {
+      "type": "float"
+    },
+    "overallrating": {
+      "type": "float"
+    }
+  }
+}

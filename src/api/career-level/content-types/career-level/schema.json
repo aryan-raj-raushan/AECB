@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_levels",
+  "info": {
+    "singularName": "career-level",
+    "pluralName": "career-levels",
+    "displayName": "career_level",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "career_level_title": {
+      "type": "string",
+      "required": true
+    },
+    "career": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::career.career",
+      "inversedBy": "career_levels"
+    }
+  }
+}

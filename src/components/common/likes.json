@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_likes",
+  "info": {
+    "displayName": "likes",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

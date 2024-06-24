@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_step_descriptions",
+  "info": {
+    "displayName": "step_description",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "details": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course_url": {
+      "type": "uid",
+      "required": true
+    },
+    "course_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "page_data": {
+      "type": "dynamiczone",
+      "components": [
+        "common.gallery",
+        "common.new-overview",
+        "common.faq",
+        "common.recommended-colleges",
+        "common.banner-component",
+        "common.recommended-courses",
+        "common.recommended-exams",
+        "common.recommended-careers",
+        "common.recommended-scholarships",
+        "common.recommended-countries",
+        "common.jee-rank-predictor",
+        "common.neet-rank-predictor",
+        "common.rating-and-review",
+        "common.news-and-update",
+        "common.discussion-forum"
+      ],
+      "required": true
+    },
+    "is_top": {
+      "type": "boolean",
+      "default": false
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "banner": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::courses-type.courses-type",
+      "inversedBy": "course"
+    },
+    "specializations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::specialization.specialization",
+      "inversedBy": "courses"
+    },
+    "streams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stream.stream",
+      "inversedBy": "courses"
+    },
+    "colleges": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::college.college",
+      "inversedBy": "courses"
+    },
+    "nav_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::navbar.navbar",
+      "inversedBy": "courses"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo"
+    },
+    "approved_by": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organisation.organisation",
+      "inversedBy": "courses"
+    },
+    "average_fee": {
+      "type": "biginteger",
+      "required": true
+    },
+    "rating": {
+      "type": "decimal",
+      "max": 10,
+      "min": 0,
+      "required": true
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-and-blog.news-and-blog",
+      "inversedBy": "courses"
+    },
+    "dawonload_brochure": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "course_title": {
+      "type": "text",
+      "required": true,
+      "maxLength": 150
+    },
+    "course_level": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-level.course-level",
+      "inversedBy": "courses"
+    },
+    "review_component": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.review-component",
+      "required": true
+    },
+    "discussion_forums": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::discussion-forum.discussion-forum",
+      "mappedBy": "courses"
+    },
+    "user_forms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-form.user-form",
+      "mappedBy": "course"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "courses"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "courses"
+    },
+    "filter_sequence": {
+      "type": "biginteger",
+      "min": "1",
+      "unique": true,
+      "required": true
+    }
+  }
+}

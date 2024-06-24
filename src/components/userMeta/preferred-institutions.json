@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_usermeta_preferred_institutions",
+  "info": {
+    "displayName": "preferred_institutions",
+    "icon": "collapse",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "college": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::college.college"
+    }
+  }
+}

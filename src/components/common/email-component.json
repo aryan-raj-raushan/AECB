@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_email_components",
+  "info": {
+    "displayName": "email_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

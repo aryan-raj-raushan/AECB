@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_text_sections",
+  "info": {
+    "displayName": "text_section",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "header_text": {
+      "type": "string"
+    },
+    "description_text": {
+      "type": "text"
+    }
+  }
+}

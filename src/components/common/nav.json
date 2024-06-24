@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_navs",
+  "info": {
+    "displayName": "Nav",
+    "icon": "command",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

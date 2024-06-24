@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_long_text_components",
+  "info": {
+    "displayName": "long_text_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

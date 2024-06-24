@@ -1,0 +1,153 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "career",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "career_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "page_data": {
+      "type": "dynamiczone",
+      "components": [
+        "common.gallery",
+        "common.faq",
+        "common.new-overview",
+        "common.recommended-colleges",
+        "common.recommended-courses",
+        "common.recommended-exams",
+        "common.recommended-careers",
+        "common.recommended-scholarships",
+        "common.recommended-countries",
+        "common.banner-component",
+        "common.rating-and-review",
+        "common.news-and-update",
+        "common.discussion-forum"
+      ],
+      "required": true
+    },
+    "streams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stream.stream",
+      "mappedBy": "career"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "average_startin_salary": {
+      "type": "decimal",
+      "required": true
+    },
+    "popular_companies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::popular-companie.popular-companie",
+      "mappedBy": "career"
+    },
+    "career_levels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::career-level.career-level",
+      "mappedBy": "career"
+    },
+    "job_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-type.job-type",
+      "mappedBy": "career"
+    },
+    "gender_ratio": {
+      "type": "biginteger"
+    },
+    "discussion_forums": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::discussion-forum.discussion-forum",
+      "mappedBy": "careers"
+    },
+    "career_url": {
+      "type": "string",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo"
+    },
+    "user_forms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-form.user-form",
+      "mappedBy": "career"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "careers"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_top": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "careers"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-and-blog.news-and-blog",
+      "mappedBy": "careers"
+    },
+    "review_component": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.review-component",
+      "required": true
+    },
+    "nav_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::navbar.navbar",
+      "inversedBy": "careers"
+    }
+  }
+}

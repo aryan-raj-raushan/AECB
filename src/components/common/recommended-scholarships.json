@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_common_recommended_scholarships",
+  "info": {
+    "displayName": "recommended_scholarships",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "scholarships": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::scholarship.scholarship"
+    },
+    "navbars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    }
+  }
+}

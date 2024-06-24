@@ -1,0 +1,111 @@
+query {
+  exams {
+    data {
+      id
+      attributes {
+        exam_name
+        page_data {
+          __typename
+          ... on ComponentCommonFaq {
+            questions {
+              Question
+              Answer
+            }
+            section
+          }
+          ... on ComponentCommonGallery {
+            gallery {
+              data {
+                attributes {
+                  url
+                  formats
+                  size
+                }
+              }
+            }
+            section
+          }
+          ... on ComponentCommonGoogleAds {
+            section
+          }
+          ... on ComponentCommonNavItem {
+            id
+            title
+          }
+          ... on ComponentCommonNavbar {
+            nav_item {
+              title
+            }
+            section
+          }
+          ... on ComponentCommonNewOverview {
+            overview_text
+            writer_name
+            date
+            section
+          }
+          ... on ComponentCourseCourses {
+            course {
+              course_name
+              total_intake
+              annual_fees
+              study_mode
+              exam_accepted
+              duration
+              average_fees
+              specialisation {
+                title
+              }
+            }
+            section
+          }
+        }
+        exam_mode
+        logo {
+          data {
+            attributes {
+              url
+              formats
+              size
+            }
+          }
+        }
+        banner {
+          data {
+            attributes {
+              url
+              formats
+              size
+            }
+          }
+        }
+        title
+        description
+        canonical
+        keywords
+        og_title
+        og_url
+        og_description
+        og_image {
+          data {
+            attributes {
+              url
+              formats
+              size
+            }
+          }
+        }
+        og_image_alt {
+          data {
+            attributes {
+              url
+              formats
+              size
+            }
+          }
+        }
+        og_image_alt_text
+      }
+    }
+  }
+}

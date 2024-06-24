@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_common_select_course_components",
+  "info": {
+    "displayName": "select_course_component"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

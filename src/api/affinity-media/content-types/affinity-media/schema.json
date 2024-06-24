@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "affinity_medias",
+  "info": {
+    "singularName": "affinity-media",
+    "pluralName": "affinity-medias",
+    "displayName": "Affinity Media",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_top": {
+      "type": "boolean",
+      "default": false
+    },
+    "newspaper": {
+      "displayName": "Newpaper",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.newpaper"
+    },
+    "awards": {
+      "displayName": "awards",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.awards"
+    },
+    "articles": {
+      "displayName": "artical",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.artical"
+    }
+  }
+}

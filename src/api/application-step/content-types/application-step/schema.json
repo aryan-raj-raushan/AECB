@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "application_steps",
+  "info": {
+    "singularName": "application-step",
+    "pluralName": "application-steps",
+    "displayName": "application_step",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "step_name": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "maxLength": 150
+    }
+  }
+}

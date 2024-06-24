@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_common_form_stapes",
+  "info": {
+    "displayName": "form_stape",
+    "icon": "cog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "field": {
+      "displayName": "user",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.user"
+    },
+    "step_label": {
+      "type": "string"
+    },
+    "step_banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "step_heading": {
+      "type": "string"
+    },
+    "step_description": {
+      "displayName": "step_description",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.step-description"
+    }
+  }
+}

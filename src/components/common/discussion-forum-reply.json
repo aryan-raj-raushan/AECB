@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_common_discussion_forum_replies",
+  "info": {
+    "displayName": "discussion_forum_reply",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "replied_at": {
+      "type": "date"
+    },
+    "reply_description": {
+      "type": "text"
+    },
+    "replied_by": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "dislikes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

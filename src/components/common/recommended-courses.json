@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_common_recommended_courses",
+  "info": {
+    "displayName": "recommended_courses",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navbar.navbar"
+    }
+  }
+}

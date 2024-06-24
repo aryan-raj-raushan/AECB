@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_galleries",
+  "info": {
+    "displayName": "Gallery",
+    "icon": "landscape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navbar.navbar"
+    },
+    "heading": {
+      "type": "string",
+      "required": false,
+      "maxLength": 150
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_save_scholarships",
+  "info": {
+    "displayName": "save_scholarships",
+    "icon": "collapse",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "scholarships": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::scholarship.scholarship"
+    }
+  }
+}

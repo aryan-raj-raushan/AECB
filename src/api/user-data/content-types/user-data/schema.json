@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_datas",
+  "info": {
+    "singularName": "user-data",
+    "pluralName": "users-data",
+    "displayName": "user_data",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "number": {
+      "type": "string",
+      "maxLength": 10,
+      "minLength": 10
+    },
+    "stream": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stream.stream"
+    },
+    "courseLevel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course-level.course-level"
+    },
+    "password": {
+      "type": "password"
+    },
+    "name": {
+      "type": "string"
+    },
+    "otp": {
+      "type": "string",
+      "maxLength": 6,
+      "minLength": 6
+    },
+    "gender": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "courseInterested": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
+    },
+    "educationDetails_10": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.10th-class-info-component"
+    },
+    "educationDetails_12": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.12th-class-info-component"
+    },
+    "graduationDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.graduation-info-component"
+    },
+    "users_meta_data": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::users-meta-data.users-meta-data",
+      "mappedBy": "user_data"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_save_exams",
+  "info": {
+    "displayName": "save_exam",
+    "icon": "collapse",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "exams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exam.exam"
+    }
+  }
+}

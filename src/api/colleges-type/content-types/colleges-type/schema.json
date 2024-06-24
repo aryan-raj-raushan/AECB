@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colleges_types",
+  "info": {
+    "singularName": "colleges-type",
+    "pluralName": "colleges-types",
+    "displayName": "colleges_type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "college_type": {
+      "type": "string",
+      "required": true
+    },
+    "colleges": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::college.college",
+      "mappedBy": "college_type"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "other-service-interest",
+  "info": {
+    "displayName": "other_service_interest",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "landing_pages": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::landing-page.landing-page"
+    },
+    "current_step": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::application-step.application-step"
+    }
+  }
+}

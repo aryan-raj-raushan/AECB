@@ -1,0 +1,49 @@
+{
+  "extends": "@strapi/typescript-utils/tsconfigs/server",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "types": ["node", "jest"]
+  },
+  "include": [
+    "./",
+    "./**/*.ts",
+    "./**/*.js",
+    "src/**/*.json"
+  ],
+  "exclude": [
+    "node_modules/",
+    "build/",
+    "dist/",
+    ".cache/",
+    ".tmp/",
+    "src/admin/",
+    "**/*.test.*",
+    "src/plugins/**"
+  ]
+}
+
+// {
+//   "extends": "@strapi/typescript-utils/tsconfigs/server",
+//   "compilerOptions": {
+//     "outDir": "dist",
+//     "rootDir": ".",
+//     "types": ["node", "jest"]
+//   },
+//   "include": [
+//     "./",
+//     "./**/*.ts",
+//     "./**/*.js"
+//   ],
+//   "exclude": [
+//     "node_modules/",
+//     "build/",
+//     "dist/",
+//     ".cache/",
+//     ".tmp/",
+//     "src/admin/",
+//     "**/*.test.*",
+//     "src/plugins/**",
+//     "src/**/*.json"  
+//   ]
+// }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_exm_dates",
+  "info": {
+    "displayName": "exm_date",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    }
+  }
+}

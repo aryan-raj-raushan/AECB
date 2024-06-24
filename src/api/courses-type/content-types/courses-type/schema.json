@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses_types",
+  "info": {
+    "singularName": "courses-type",
+    "pluralName": "courses-types",
+    "displayName": "courses_type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course_type": {
+      "type": "string",
+      "required": true
+    },
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course",
+      "mappedBy": "type"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+query {
+    colleges(filters: { id: { eq: "1" } })  {
+      data {
+        id
+        attributes {
+          college_name
+          location
+          type
+          approved_by
+          is_top_college
+          top_college_category
+          title
+          description
+          keywords
+          canonical
+          og_title
+          og_url
+          og_description
+  
+          og_image {
+            data {
+              attributes {
+                url
+                formats
+                size
+              }
+            }
+          }
+  
+          og_image_alt {
+            data {
+              attributes {
+                url
+                formats
+                size
+              }
+            }
+          }
+  
+          og_image_alt_text
+  
+          page_data {
+            __typename
+            ... on ComponentCommonFaq {
+              questions {
+                Question
+                Answer
+              }
+              section
+            }
+            ... on ComponentCommonGallery {
+              gallery {
+                data {
+                  attributes {
+                    url
+                    formats
+                    size
+                  }
+                }
+              }
+              section
+            }
+            ... on ComponentCommonGoogleAds {
+              section
+            }
+            
+            ... on ComponentCommonNavbar {
+              nav_item {
+                title
+              }
+              section
+            }
+            ... on ComponentCommonNewOverview {
+              overview_text
+              writer_name
+              date
+              section
+            }
+            ... on ComponentCourseCourses {
+              course {
+                course_name
+                total_intake
+                annual_fees
+                study_mode
+                exam_accepted
+                duration
+                average_fees
+                specialisation {
+                  title
+                }
+              }
+              section
+            }
+            ... on ComponentTableTable {
+              row {
+                col {
+                  value
+                  is_heading
+                }
+              }
+            }
+          }
+  
+          banner {
+            data {
+              attributes {
+                url
+                formats
+                size
+              }
+            }
+          }
+  
+          logo {
+            data {
+              attributes {
+                url
+                formats
+                size
+              }
+            }
+          }
+        }
+      }
+    }
+  }

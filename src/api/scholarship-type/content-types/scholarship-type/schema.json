@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scholarship_types",
+  "info": {
+    "singularName": "scholarship-type",
+    "pluralName": "scholarship-types",
+    "displayName": "scholarship_type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "scholarships": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::scholarship.scholarship",
+      "mappedBy": "type"
+    }
+  }
+}

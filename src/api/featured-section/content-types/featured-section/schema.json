@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_sections",
+  "info": {
+    "singularName": "featured-section",
+    "pluralName": "featured-sections",
+    "displayName": "featured_section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "text_section": {
+      "displayName": "text_section",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.text-section",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "pointers": {
+      "displayName": "pointers",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.pointers",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.button-type",
+      "required": true
+    }
+  }
+}

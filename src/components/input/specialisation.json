@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_input_specialisations",
+  "info": {
+    "displayName": "Specialisation",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Specializations": {
+      "type": "string"
+    }
+  }
+}

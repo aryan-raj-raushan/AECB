@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portal-service-qa
+  namespace: ps-qa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portal-service-qa
+  template:
+    metadata:
+      labels:
+        app: portal-service-qa
+    spec:
+      containers:
+        - name: portal-service-qa
+          image: 105714384814.dkr.ecr.ap-south-1.amazonaws.com/k8sportalserviceqa:latest
+          ports:
+            - containerPort: 1337
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portalserviceqa-service
+  namespace: ps-qa
+spec:
+  selector:
+    app: portal-service-qa
+  ports:
+    - protocol: TCP
+      port: 1337  # Port on the ALB
+      targetPort: 1337  # Port on your pods
+  type: NodePort

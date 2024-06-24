@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_application_status_components",
+  "info": {
+    "displayName": "Application_Status_Component",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "step_name": {
+      "type": "string"
+    }
+  }
+}

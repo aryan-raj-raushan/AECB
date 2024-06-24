@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_common_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "page_title": {
+      "type": "text"
+    },
+    "page_og_title": {
+      "type": "text"
+    },
+    "page_description": {
+      "type": "text"
+    },
+    "page_og_description": {
+      "type": "text"
+    },
+    "page_canonical_url": {
+      "type": "text",
+      "regex": "^[a-zA-Z0-9-]+$",
+      "unique": true
+    },
+    "page_og_url": {
+      "type": "text",
+      "regex": "^[a-zA-Z0-9-]+$",
+      "unique": true
+    },
+    "favicon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "favicon_alt_text": {
+      "type": "text"
+    }
+  }
+}
